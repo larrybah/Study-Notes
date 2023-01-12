@@ -23,12 +23,26 @@ It is an **Imperative** **Procedural** typed language.
 | signed char | c or %c | 1 |
 | unsigned char | c or %c | 1 |
 | long double | LF or %LF | 10 or 16 |
+| size_t | zu or %zu | "size_t" is used to represent the size of an object. unsigned type integral.
+
+> The Long keyword cannot be used with char or float types.
+
 
 ### Derived Data Types
 Data types that are derived from fundamental data types are derived types. Eg, **arrays, pointers, function types, structures, bool type, Enumerated type, Complex types.**
 
+> In **if else** you do not need to put **{ }** if there is only one statement in it.
 
+``` if () {
+   statement
+  } else if () {
+   statement
+  } else {
+   statement
+  }
+```
 
+` for(int a = 0; a <= x; a++) {}`
 
 
 

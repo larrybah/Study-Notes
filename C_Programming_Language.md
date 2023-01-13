@@ -60,7 +60,31 @@ In C language we use loops to iterate or do something repeatedly.
 There are two type of functions in C 
 * user-defined functions - created by a user.
 * standard library functions - functions in the header files of c language.
- 
+
+> Recursion is when a function calls itself untill a specific task is accomplished, thus a recursive function.
+>> sometimes it is best to use loops instead of recursions as they are slower.
+>> but recursive functions have their use cases in Data structures and Algorithm.
+
+### Storage Classes
+
+Every variable in C has both a Type and a Storage class.
+> **Type** - Means the data type of a variable.
+> **Storage Class** - Determines the scope, visibility and lifetime of a variable.
+
+#### There are Four type of Storage Class
+
+- static
+- register
+- external
+- automatic
+
+*automatic or local variables* - this are variables that are local to the block in which they are declared. Eg. A variable declared inside a for loop or a function, that variable is local to that block of code.
+
+Variables that are declared outside of all the functions are known as ***External variable or Global variables***. They are accesible from anywhere in the program. suppose, a global variable is declared in *file1*, if you try to  use that same variable in onother file *file2*, the compiler will complain. To solve this problem, keyword ***extern*** is used in *file2* to indicate that the external variable is declared in another file.
+
+The ***register*** keyword is used to declare register variables. Register variables were supposed to be faster than local variables.
+
+The ***Static*** variable is declared by using the static keyword, The value of the static variable persists until the end of the program. Eg. `static int i;`
 
 
 

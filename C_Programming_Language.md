@@ -33,16 +33,35 @@ Data types that are derived from fundamental data types are derived types. Eg, *
 
 > In **if else** you do not need to put **{ }** if there is only one statement in it.
 
-``` if () {
-   statement
-  } else if () {
-   statement
+``` 
+ if ( a%y == x) {
+   do this
+  } else if ( a == x ) {
+   do this
   } else {
-   statement
+   do this
   }
 ```
 
-` for(int a = 0; a <= x; a++) {}`
+### Loops
+
+In C language we use loops to iterate or do something repeatedly.
+
+* for Loops 
+` for(int a = 0; a <= x; a++) {do this}`
+
+* while Loops
+`while ( a <= x ) {do this}`
+
+* do while loops
+`do {do this} while(a <= x)`
+
+### Functions in C language - a function is a block of code to excute a specific task.
+There are two type of functions in C 
+* user-defined functions - created by a user.
+* standard library functions - functions in the header files of c language.
+ 
+
 
 
 

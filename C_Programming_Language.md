@@ -92,6 +92,15 @@ The ***Static*** variable is declared by using the static keyword, The value of 
 
 Declaring an Array - dataType arrayName [arraySize] = { arrayElements }
 
+> An array can be one Dimensional or multi-Dimensional array.
+>
+>> One Dimensional Array -> int marks[5] = {2, 3, 4, 5, 1}
+>
+>> Multi Dimensional Array (2D array) -> int marks[5][5] = {{1, 3, 4, 5, 6},{2, 2, 34, 5, 6}}
+> 
+>> Multi Dimensional Array (3D array) -> int marks[5][5][5] = { {1, 3, 4, 5, 6}, {2, 2, 34, 5, 6}, {2, 3, 4, 5, 1} }
+>
+
 
 
 

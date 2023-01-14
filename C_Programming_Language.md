@@ -86,6 +86,12 @@ The ***register*** keyword is used to declare register variables. Register varia
 
 The ***Static*** variable is declared by using the static keyword, The value of the static variable persists until the end of the program. Eg. `static int i;`
 
+### Arrays 
+
+> An Array is variable that can store multiple values Eg. `float marks[3] = { 65, 45, 56 };`
+
+Declaring an Array - dataType arrayName [arraySize] = { arrayElements }
+
 
 
 

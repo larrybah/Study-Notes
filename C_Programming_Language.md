@@ -99,7 +99,11 @@ Declaring an Array - dataType arrayName [arraySize] = { arrayElements }
 >> Multi Dimensional Array (2D array) -> int marks[5][5] = {{1, 3, 4, 5, 6},{2, 2, 34, 5, 6}}
 > 
 >> Multi Dimensional Array (3D array) -> int marks[5][5][5] = { {1, 3, 4, 5, 6}, {2, 2, 34, 5, 6}, {2, 3, 4, 5, 1} }
->
+> We use for Loops to iterate over values of multi-Dimensional arrays.
+
+
+
+
 
 
 

@@ -102,6 +102,11 @@ Declaring an Array - dataType arrayName [arraySize] = { arrayElements }
 > We use for Loops to iterate over values of multi-Dimensional arrays.
 > When passing a 2 dimensional array in a function as a parameter it is not mandatory to specify the number of rows in an array, how ever its mandatory to specify the number of columns.
 
+### Pointers 
+
+Pointers are special variables that are used to store addresses rather than values. `int *a;`, `int* a, b`
+
+Array names usually decay to pointers (meaning array names can sometimes be converted to pointers), you can use this pointer to access elements in an array. But you have to be careful not change anything in the elements because it will change the elements in the original array.  
 
 
 

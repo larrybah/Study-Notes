@@ -88,6 +88,8 @@ The ***Static*** variable is declared by using the static keyword, The value of 
 
 ### Arrays 
 
+An Array is a collection of fixed number of values, once the size of an array is declared you cannot change it.
+
 > An Array is variable that can store multiple values Eg. `float marks[3] = { 65, 45, 56 };`
 
 Declaring an Array - dataType arrayName [arraySize] = { arrayElements }
@@ -106,7 +108,24 @@ Declaring an Array - dataType arrayName [arraySize] = { arrayElements }
 
 Pointers are special variables that are used to store addresses rather than values. `int *a;`, `int* a, b`
 
-Array names usually decay to pointers (meaning array names can sometimes be converted to pointers), you can use this pointer to access elements in an array. But you have to be careful not change anything in the elements because it will change the elements in the original array.  
+Array names usually decay to pointers (meaning array names can sometimes be converted to pointers), you can use this pointer to access elements in an array. But you have to be careful not to change anything in the elements because it will change the elements in the original array.
+
+> You can pass pointers as arguments in a function. 
+
+### Memory Allocation in C
+
+As you know, an array is a collection of a fixed number of values. Once declared, you cannot change it.
+
+Sometimes the size of the array you declared may be insufficient. To solve this issue, you can allocate memory during run-time. This is known as dynamic memory allocation in C programming.
+
+To allocate memory dynamically, library functions are `malloc()`, `calloc()`, `realloc()`, and `free()` are used. These functions are defined in the `stdlib.h` header file.
+
+**`malloc()`** stands for *memory allocation*
+The malloc() function reserves a block of memory of the specified number of bytes. And it returns a pointer of `void` which can be casted into pointers of any form. Syntax -> ptr = (castType*) malloc(size); Eg. `ptr = (float*) malloc(100 * sizeof(float));`
+
+**`calloc()`** stands for *contiguous allocation* -> ptr = (castType*) calloc(n, size); 
+
+**`free()`** Dynamically allocated memory  created with either `calloc()` or `malloc()` doesn't get freed on their own. we have to explicitly use free() to release the space.
 
 
 

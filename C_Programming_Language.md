@@ -61,7 +61,7 @@ There are two type of functions in C
 * user-defined functions - created by a user.
 * standard library functions - functions in the header files of c language.
 
-> Recursion is when a function calls itself untill a specific task is accomplished, thus a recursive function.
+> Recursion is when a function calls itself repeatedly untill a specific task is accomplished, thus a recursive function.
 >> sometimes it is best to use loops instead of recursions as they are slower.
 >> but recursive functions have their use cases in Data structures and Algorithm.
 
@@ -80,7 +80,7 @@ Every variable in C has both a Type and a Storage class.
 
 *automatic or local variables* - this are variables that are local to the block in which they are declared. Eg. A variable declared inside a for loop or a function, that variable is local to that block of code.
 
-Variables that are declared outside of all the functions are known as ***External variable or Global variables***. They are accesible from anywhere in the program. suppose, a global variable is declared in *file1*, if you try to  use that same variable in onother file *file2*, the compiler will complain. To solve this problem, keyword ***extern*** is used in *file2* to indicate that the external variable is declared in another file.
+Variables that are declared outside of all the functions are known as ***External variable or Global variables***. They are accesible from anywhere in the program. suppose, a global variable is declared in *file1*, if you try to  use that same variable in onother *file2*, the compiler will complain. To solve this problem, keyword ***extern*** is used in *file2* to indicate that the variable is an external variable declared in another file.
 
 The ***register*** keyword is used to declare register variables. Register variables were supposed to be faster than local variables.
 
@@ -121,11 +121,13 @@ Sometimes the size of the array you declared may be insufficient. To solve this 
 To allocate memory dynamically, library functions are `malloc()`, `calloc()`, `realloc()`, and `free()` are used. These functions are defined in the `stdlib.h` header file.
 
 **`malloc()`** stands for *memory allocation*
-The malloc() function reserves a block of memory of the specified number of bytes. And it returns a pointer of `void` which can be casted into pointers of any form. Syntax -> ptr = (castType*) malloc(size); Eg. `ptr = (float*) malloc(100 * sizeof(float));`
+The malloc() function reserves a block of memory of the specified number of bytes. And it returns a pointer of `void` which can be casted into pointers of any form. Syntax -> ptr = (castType*) malloc(size); Eg. ` *ptr = (float*) malloc(100 * sizeof(float));`
 
-**`calloc()`** stands for *contiguous allocation* -> ptr = (castType*) calloc(n, size); 
+**`calloc()`** stands for *contiguous allocation* -> dataType *ptr = (castType*) calloc(n, size); 
 
-**`free()`** Dynamically allocated memory  created with either `calloc()` or `malloc()` doesn't get freed on their own. we have to explicitly use free() to release the space.
+`**realloc()**` stands for *reallocation of memory* -> The `*realloc()*` function in C is used to dynamically change the size of a previously allocated memory block. It takes a pointer to a previously allocated memory block and a new size as arguments, and returns a pointer to the newly allocated memory block. If the function is successful, the original memory block is freed and the returned pointer points to the newly allocated memory block.
+
+**`free()`** Dynamically allocated memory  created with either `calloc()` or `malloc()` doesn't get freed on their own. we have to explicitly use `free()` to release the space.
 
 
 

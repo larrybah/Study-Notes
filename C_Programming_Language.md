@@ -125,7 +125,7 @@ The malloc() function reserves a block of memory of the specified number of byte
 
 **`calloc()`** stands for *contiguous allocation* -> dataType *ptr = (castType*) calloc(n, size); 
 
-`**realloc()**` stands for *reallocation of memory* -> The `*realloc()*` function in C is used to dynamically change the size of a previously allocated memory block. It takes a pointer to a previously allocated memory block and a new size as arguments, and returns a pointer to the newly allocated memory block. If the function is successful, the original memory block is freed and the returned pointer points to the newly allocated memory block.
+**`realloc()`** stands for *reallocation of memory* -> The *`realloc()`* function in C is used to dynamically change the size of a previously allocated memory block. It takes a pointer to a previously allocated memory block and a new size as arguments, and returns a pointer to the newly allocated memory block. If the function is successful, the original memory block is freed and the returned pointer points to the newly allocated memory block. Eg: **`int *ptr = (int*) realloc(ptr 5 * sizeof(int))`**
 
 **`free()`** Dynamically allocated memory  created with either `calloc()` or `malloc()` doesn't get freed on their own. we have to explicitly use `free()` to release the space.
 

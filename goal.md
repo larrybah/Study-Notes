@@ -12,3 +12,10 @@ I Will Pass all   **TESTS** and **ASSIGNMENTS/HOMEWORKS.**
 
 I will work **HARD** to **FINISH** all **PROJECTS**, Because i want to **TO BE THE BEST VERSION OF ME.** 
 
+
+## Questions For Myself
+
+Where have i been?
+Why am i here?
+Where are my going?
+

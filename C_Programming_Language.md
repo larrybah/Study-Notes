@@ -164,6 +164,64 @@ The malloc() function reserves a block of memory of the specified number of byte
 
 A string is a sequence of characters stored in an array with a null `\0` character marking the end of the string. Eg `char greet[] = {'h', 'e', 'l', 'l', 'o','\0'};` 
 
+> Some few function to work with `string` keyword.
+> 
+> >  `strcat()` - to concatenate(joins) strings.
+> >  
+> >  `strcpy()` - Copies strings together.
+> >  
+> >  `strlen()` - computes strings length.
+> >  
+> >  `strcmp()` - compares two strings.
+> >  
+> >  `strlwr()` - converts (turns) strings to lowercase.
+> >  
+> >  `strupr()` - converts (turns) strings to uppercase.
+> 
+
+### Structures and Unions
+
+ A **structure** is a user-defined data type that allows you to *group together* variables of different types into a single unit. A structure is defined using the keyword `struct`, followed by the name of the structure and a list of member variables inside curly braces. 
+ 
+ when a struct type is created no memory or storage is allocated, To allocate memory or storage of a given structure type and work with it,  we need to create variables.
+  
+ ```
+ struct StructureName {
+ dataType memeber1;
+ dataType member2;
+ }
+ ```
+ 
+ Create a **Derived data type** *struct Person*
+ 
+ ```
+ struct Person {
+ char name[50];
+ int CitNo;
+ float salary;
+ }
+ ```
+ 
+ Accessing Members of a structure
+ 
+ - (Dot) **.** member operator Eg. `person.salary`
+ - (arrow) **->** Structure pointer operator (To access pointer members in struct)
+
+We use **typedef** to create alias in structures 
+
+```
+typedef struct Distance {
+    int feet;
+    float inch;
+} distances;
+
+int main() {
+    distances d1, d2;
+}
+```
+ 
+
+
 
 
 

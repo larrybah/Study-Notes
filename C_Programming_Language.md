@@ -160,6 +160,10 @@ The malloc() function reserves a block of memory of the specified number of byte
 
 **`free()`** Dynamically allocated memory  created with either `calloc()` or `malloc()` doesn't get freed on their own. we have to explicitly use `free()` to release the space.
 
+### Strings
+
+A string is a sequence of characters stored in an array with a null `\0` character marking the end of the string. Eg `char greet[] = {'h', 'e', 'l', 'l', 'o','\0'};` 
+
 
 
 

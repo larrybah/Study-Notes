@@ -1,10 +1,6 @@
 # The C Programmming Language
 
-C is one of the oldest programming languages *some consider it to be the mother of all programming languages*.
-It is an **Imperative** **Procedural** typed language.
-
-**Imperative** means it is has a clearly defined sequence of instructions in a program.
-**Procedural** means it divides tasks a program is suppose to do into smaller sub-tasks.
+C is a high-level programming language developed in the early 1970s by Dennis Ritchie at Bell Labs. It is a **procedural language**, which means that it follows a top-down approach and uses **procedures or functions** to break down a problem into smaller, manageable tasks. C is widely used for system programming, embedded systems, and low-level programming, such as operating system and driver development. It is also a popular language for learning programming concepts and techniques, due to its simple and straightforward syntax. C is the basis for many other programming languages, such as C++, C#, and Java.
 
 ## Data Type and Symbols
 
@@ -15,7 +11,7 @@ It is an **Imperative** **Procedural** typed language.
 | char | c or %c | 1 | character type
 | float | f or %f | 4 | holds real numbers. eg **25.342e2.**
 | short int | hd or %hd | 2 | 
-| unsigned int | u or %u | 2 or 4 | type modifiers, You can  alter the data storage of a data type by using them. **unsigned -** allows for storage of only positive numbers. 
+| unsigned int | u or %u | 2 or 4 | type modifiers, You can  alter the data storage of a data type by using them. **unsigned -** allows for storage of only positive numbers. An `unsigned` data type is variable can hold non-negative integer values.
 | long int | ld, li or %ld, %li | 4 or 8 |
 | long long int | lld, lli or %lld, %lli | 8 |
 | unsigned long int | lu or %lu | 4 |
@@ -25,7 +21,15 @@ It is an **Imperative** **Procedural** typed language.
 | long double | LF or %LF | 10 or 16 |
 | size_t | zu or %zu | "size_t" is used to represent the size of an object. unsigned type integral.
 
+
+> There are four type modifiers in C that are used to alter the **Data Storage** of a data type:
+> > The *Long* and *short* keywords - Long increases the size of an integer data type and short reduces the size of an integer data type.
+> > 
+> > The *signed* and *unsigned* keywords - these indicate whether a variable can hold negative or non-negative values respectively.
+> >
 > The Long keyword cannot be used with char or float types.
+> 
+> The main difference between the `unsigned` type modifier and the `signed` type modifier is that - `unsigned` holds a larger range of positive values but cannot hold negative values.
 
 
 ### Derived Data Types
@@ -83,6 +87,32 @@ Every variable in C has both a Type and a Storage class.
 Variables that are declared outside of all the functions are known as ***External variable or Global variables***. They are accesible from anywhere in the program. suppose, a global variable is declared in *file1*, if you try to  use that same variable in onother *file2*, the compiler will complain. To solve this problem, keyword ***extern*** is used in *file2* to indicate that the variable is an external variable declared in another file.
 
 The ***register*** keyword is used to declare register variables. Register variables were supposed to be faster than local variables.
+
+the `register` keyword is used to suggest to the compiler that a variable should be stored in a register rather than in memory. Register storage is faster than memory storage because the CPU can access registers directly, without the need to access memory.
+
+When you define a variable with the `register` keyword, the compiler is free to ignore your suggestion and to store the variable in memory, depending on the available registers and the optimization level set.
+
+It is important to note that not all types of variables can be defined as register variables. Variables that are defined as arrays or variables that have their address taken cannot be defined as register variables. Also, register variables have a limited scope, they cannot be used in function calls and cannot be passed to other functions.
+
+In general, register variables are most useful in tight loops, where a variable is used repeatedly and its value changes frequently. For example, a variable that is used as a loop counter would be a good candidate for a register variable. 
+
+Example :
+```
+> register int  i;
+> 
+>  for(i = 0; i < 1000; i++) 
+>  
+>  {
+>  
+>   do this
+>   
+>  }
+```
+
+
+The use of `register` keyword is mostly used as a hint to the compiler to store the variable in a register, but the actual storage location is up to the compiler to decide.
+
+It is also worth noting that modern compilers are very good at optimizing code, and the use of the `register` keyword is less important than it used to be.
 
 The ***Static*** variable is declared by using the static keyword, The value of the static variable persists until the end of the program. Eg. `static int i;`
 

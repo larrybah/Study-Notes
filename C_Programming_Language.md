@@ -21,6 +21,7 @@ C is a high-level programming language developed in the early 1970s by Dennis Ri
 | long double | LF or %LF | 10 or 16 |
 | size_t | zu or %zu | "size_t" is used to represent the size of an object. unsigned type integral.
 
+#### Explain Type Modifiers
 
 > There are four type modifiers in C that are used to alter the **Data Storage** of a data type:
 > > The *Long* and *short* keywords - Long increases the size of an integer data type and short reduces the size of an integer data type.

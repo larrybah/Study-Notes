@@ -10,7 +10,7 @@ I will **STUDY VERY HARD** and i am willing to do **WHATEVER IT TAKES** to be a 
 
 I Will Pass all   **TESTS** and **ASSIGNMENTS/HOMEWORKS.** 
 
-I will work **HARD** to **FINISH** all **PROJECTS**, Because i want to **TO BE THE BEST VERSION OF ME.** 
+I will work **HARD** to **FINISH** all **PROJECTS** on **Time**, Because i want to **TO BE THE BEST VERSION OF ME.** 
 
 
 ## Questions For Myself

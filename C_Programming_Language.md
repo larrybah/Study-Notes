@@ -220,6 +220,25 @@ int main() {
 }
 ```
  
+ ### Unions 
+ 
+ Both `Structures` and `Unions` are user-define data types that allow you to group together variables of different data types into a single Unit.
+ 
+ > How ever there are few key differences between the two.
+ 
+ 1. Memory allocation: In a structure, *each member variable is allocated its own memory space*, whereas in a union, *all member variables share the same memory space*. This means that the total memory required for a union is equal to the memory required for the largest member variable, whereas the total memory required for a structure is equal to the sum of the memory required for all member variables.
+ 
+ 2. Accessing members: You can access the members of a structure using the dot operator (.) and you can access the members of a union using the dot operator or the arrow operator (->).
+ 
+ 3. Use cases: Structures are typically used when you need to group together related data items that have different types and that you want to be able to access independently. Unions, on the other hand, are typically used when you need to use the same memory space for variables that have different types, but you will only use one of them at a time.
+
+It's important to note that unions can be useful in certain situations such as using the same memory space for different data types, but structures are more commonly used in C programming.
+
+In general, structures are more versatile and can be used in a broader range of situations, whereas unions have more specific use cases and are generally used for optimization purposes.
+
+
+
+
 
 
 

@@ -25,5 +25,10 @@ Because there is no storage / memory overhead with making many branches, it's ea
 But before we `git commmit` the new branch we make sure to  `git checkout newImage` so that we dont commit wrongly. 
 
 > Example -- `git checkout newImage; git commit`
+> `git checkout -b [yourbranchname]`
+
+## Branches and merging
+
+
 
 

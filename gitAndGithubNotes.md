@@ -29,6 +29,9 @@ But before we `git commmit` the new branch we make sure to  `git checkout newIma
 
 ## Branches and merging
 
+When a branch is created and some features added to that branch later merged to the main, a new branch is created.
+`git checkout bugFix; git merge main`
+
 
 
 

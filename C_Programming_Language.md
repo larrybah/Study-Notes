@@ -7,11 +7,11 @@ C is a high-level programming language developed in the early 1970s by Dennis Ri
 | Data Type | Symbol | Size in bytes | Definition |
 | ------ | ------| ------ | ------ |
 | int | i, d or %i, %d | 2 or 4 | Intergers are whole numbers that can have both zero, positive and negative values but no decimal values, also sometimes called signed integers. eg **0, -5, 10 .** 
-| double | lf or %lf | 8 | holds real numbers. eg **34.564e2.** 
-| char | c or %c | 1 | character type
-| float | f or %f | 4 | holds real numbers. eg **25.342e2.**
+| double | lf or %lf | 8 | holds real numbers. eg **34.564e2.** |
+| char | c or %c | 1 | character type|
+| float | f or %f | 4 | holds real numbers. eg **25.342e2.** |
 | short int | hd or %hd | 2 | 
-| unsigned int | u or %u | 2 or 4 | type modifiers, You can  alter the data storage of a data type by using them. **unsigned -** allows for storage of only positive numbers. An `unsigned` data type is variable can hold non-negative integer values.
+| unsigned int | u or %u | 2 or 4 | type modifiers, You can  alter the data storage of a data type by using them. **unsigned -** allows for storage of only positive numbers. An `unsigned` data type is variable can hold non-negative integer values.|
 | long int | ld, li or %ld, %li | 4 or 8 |
 | long long int | lld, lli or %lld, %lli | 8 |
 | unsigned long int | lu or %lu | 4 |
@@ -19,7 +19,7 @@ C is a high-level programming language developed in the early 1970s by Dennis Ri
 | signed char | c or %c | 1 |
 | unsigned char | c or %c | 1 |
 | long double | LF or %LF | 10 or 16 |
-| size_t | zu or %zu | "size_t" is used to represent the size of an object. unsigned type integral.
+| size_t | zu or %zu | "size_t" is used to represent the size of an object. unsigned type integral.|
 
 #### Explain Type Modifiers
 

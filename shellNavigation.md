@@ -18,3 +18,24 @@ It can be used in different ways.
 | ----- | ---------- |
 | ls | list the files in the working directory  |
 | ls /bin | list the files in the /bin directory |
+| ls -l | lists the files in the working directory in a long format |
+| ls -l /etc /bin | lists the files in the /bin directly and /etc directory in long format |
+| less | less is a program that lets us view the content of a file. This is very handy since many of the files used to control and configure linux are human readable |
+
+As we wander around the linux file system, it is helpful to determine what kind of data a file contains before we try to view it. This is where the **`file`** command comes in. file will examine a file content and tell us what kind of file it is.
+
+## Manipulating Files 
+
+> cp - copies files and directories from one location to the other.
+> mv - moves or rename files adn directoriesl.
+> rm - removes or deletes files or directories.
+> rmkdir - remove only directories.
+> mkdir - creates new directories.
+
+## Wildcards 
+
+Wildcards allow you to sellect filenames based on patterns of characters.
+
+| Wildcards | Meaning |
+| -------- | -------- |
+| * | matches any character |

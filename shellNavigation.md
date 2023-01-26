@@ -15,7 +15,7 @@ The `ls` Command is used to list the contents of a directory, It is probably the
 It can be used in different ways.
 
 | list type | meaning |
-| ----- | ---------- |
+| --------- | ---------- |
 | ls | list the files in the working directory  |
 | ls /bin | list the files in the /bin directory |
 | ls -l | lists the files in the working directory in a long format |
@@ -27,9 +27,13 @@ As we wander around the linux file system, it is helpful to determine what kind 
 ## Manipulating Files 
 
 > cp - copies files and directories from one location to the other.
+> 
 > mv - moves or rename files adn directoriesl.
+> 
 > rm - removes or deletes files or directories.
+> 
 > rmkdir - remove only directories.
+> 
 > mkdir - creates new directories.
 
 ## Wildcards 
@@ -37,5 +41,5 @@ As we wander around the linux file system, it is helpful to determine what kind 
 Wildcards allow you to sellect filenames based on patterns of characters.
 
 | Wildcards | Meaning |
-| -------- | -------- |
+| ---------- | ----------- |
 | * | matches any character |

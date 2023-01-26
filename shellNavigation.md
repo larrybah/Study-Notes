@@ -40,6 +40,15 @@ As we wander around the linux file system, it is helpful to determine what kind 
 
 Wildcards allow you to sellect filenames based on patterns of characters.
 
-| Wildcards | Meaning |
-| ---------- | ----------- |
+| Wildcards   | Meaning  |
+| ------------ | ------------- |
 | * | matches any character |
+| ? | matches any single character|
+| [character] | matches any single character that is a member of the set characters. The set of characters may also be expressed as a posix character class such as one of the following 
+| posix Characters | Meaning |
+| [:alnum:] | Alphanumeric character|
+| [:alpha:] | Alphabetic character |
+| [:digit:] | Numerals |
+| [upper ] | uppercase alphabets |
+| [lower ] | lowercase alphabets |
+| [:characters] | matches any character that is not a member of the characters |

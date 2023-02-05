@@ -89,12 +89,14 @@ Standard output - Most command line programs that display their results do so by
 
 The most useful and powerful thing we can do with I/O redirection is to connect multiple commands together to form what is called pipelines. With pipelines the standard output of one command is fed into the standard input to another.
 
+Enter the `|` character where you  see the word `pipe`.
+
 | Commands | Meaning |
 | ------ | ---------- |
-| ls -l `|` less |  This takes output of the command `ls` and displays it in the `less` pager. You can press `q` to exit the pager.|
-| ls lt `|` head | Displays the 10 newest files in the current directory. |
-| du `|` sort -nr | Displays a list of directories and how much space they consume, Sorted from the largest to the smallest. |
-| Find . -type f -print `|` wc -l | Displays the total number of files in the current working directory and all of its subdirectories.|
+| ls -l `pipe` less |  This takes output of the command `ls` and displays it in the `less` pager. You can press `q` to exit the pager.|
+| ls lt `pipe` head | Displays the 10 newest files in the current directory. |
+| du `pipe` sort -nr | Displays a list of directories and how much space they consume, Sorted from the largest to the smallest. |
+| Find . -type f -print `pipe` wc -l | Displays the total number of files in the current working directory and all of its subdirectories.|
 
 ## Filters 
 One kind of program thats frequently used in pipelines is called a filter.

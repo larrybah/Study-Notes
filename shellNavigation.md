@@ -97,5 +97,18 @@ The most useful and powerful thing we can do with I/O redirection is to connect 
 | Find . -type f -print `|` wc -l | Displays the total number of files in the current working directory and all of its subdirectories.|
 
 ## Filters 
+One kind of program thats frequently used in pipelines is called a filter.
+
+Filter take standard input and perform an operation upon it and sends the result to standard output.
+
+| Programs | What it does |
+| -------- | ------------ |
+| sort | sorts standard input then outputs the sorted result on standard output. |
+| uniq | Given a sorted stream of data from standard input, it removes duplicate lines of data. ie. It makes sure that every line is unique. |
+| grep | Examines each line of data it receives from stadard input and output every line that contains a specified pattern of characters. |
+| fmt | Reads from standard input then outputs formatted text on standard output. |
+| pr | takes text from input from standard input and splits the data into pages, with page breaks, headers and footers in preparation for printing |
+
+
 
 

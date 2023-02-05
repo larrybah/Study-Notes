@@ -36,6 +36,8 @@ As we wander around the linux file system, it is helpful to determine what kind 
 > 
 > mkdir - creates new directories.
 
+<hr />
+
 ## Wildcards 
 
 Wildcards allow you to sellect filenames based on patterns of characters.
@@ -52,3 +54,38 @@ Wildcards allow you to sellect filenames based on patterns of characters.
 | [upper ] | uppercase alphabets |
 | [lower ] | lowercase alphabets |
 | [:characters] | matches any character that is not a member of the characters |
+| [!:lower:]] | Any file name that does not end with a lower letter.|
+| cp file file | Copies the content of file1 into file2. if file2 does not exist, it is created. Otherwise, file2 is silently overwritten with the contents of file1.|
+| type | Displays Information about a command type.|
+| which | locates a command|
+| help | Displays reference page.|
+| man | Displays an online command reference.|
+
+<hr />
+
+## What are Commands?
+An executable program like all those files we saw in /usr/bin, within this category programs can be compiled to binaries, such as programs written in C and C++ or programs written in scripting languages such as the shell, perl, python and ruby etc.
+
+A command built into the shell itself, bash provides a number of commands internally called shell builtins. The `cd` command for example is a shell built in.
+
+A Shell function: These are miniature shell scripts incorporated into the environment.
+
+An alias - Commands that we can define ourselves, builtin from other commands.
+
+# I/O Redirection (Input/Output Redirection)
+
+Standard output - Most command line programs that display their results do so by sending their results to a facility called standard output. To redirect standard output to a file the `>` greater than character is used like this: `ls > file.txt`. This copies the `ls` command output to a file.
+
+`ls >> file.txt`  This appends or add the output of `ls` to the file.
+
+**Many Commands can accept input from a facility called standard input. To redirect standard input from a file instead of the keyboard, the `<` less than character is used.**
+
+| Commands | Meaning |
+| ------ | --------- |
+| sort < file.txt | This command sorts the elements inside of a file.|
+| sort < file.txt > sorted_file.txt | This is used to sort the the elements in a file and transfer them to a new file.|
+
+## Pipelines 
+
+The most useful and powerful thing we can do with I/O redirection is to connect multiple commands together to form what is called pipelines. 
+
